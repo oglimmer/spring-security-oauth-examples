@@ -21,3 +21,11 @@ This is minimal project setup to use
 
 # Keycloak config
 * Uses preferred_username as the username (which is used by Keycloak by default)
+
+# Keycloak container
+
+Tested with
+
+```
+docker run --rm -p 7070:8080 -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin quay.io/keycloak/keycloak:14.0.0
+```
